@@ -50,3 +50,98 @@ print("Is it alphanumeric?", user_input.isalnum())
 print("Is it uppercase?", user_input.isupper())
 print("Is it lowercase?", user_input.islower())
 print("Is it only spaces?", user_input.isspace())
+
+
+## 8. Write a program that receives the following data from an employee: name, age, and salary. At the company where this employee works, their salary increases by $ 800.90 each year.
+
+name = input("Please tell us your name: ")
+
+age = int(input("Please tell us your age: "))
+
+salary = float(input("Please tell us your salary: "))
+
+new_salary = salary + 800.90
+
+new_age = age + 1
+
+print(f"Employee {name}, in 1 year, will be {new_age} years old, and will be receiving a salary equal to ${new_salary:.2f} next year")
+
+
+## 9. Write a program that asks the user to enter two numbers and displays on the screen the result of the sum, subtraction, multiplication, division, and remainder of the division of those numbers.
+
+first_number = float(input("Please write a number: "))
+
+second_number = float(input("Please write another number: "))
+
+addition = first_number + second_number
+print(f"{addition:.2f}")
+
+subtraction = first_number - second_number
+print(f"{subtraction:.2f}")
+
+multi = first_number * second_number
+print(f"{multi:.2f}")
+
+division = first_number / second_number
+print(f"{division:.2f}")
+
+remainder = first_number % second_number
+print(f"{remainder}")
+
+
+## 10. Write a program that asks the user for the radius of a circle and displays the area and perimeter of that circle on the screen (consider pi = 3.14). Round to 2 decimal places.
+
+circle_radius = float(input("What is the radius of a circle "))
+
+
+pi = 3.14
+area = pi * circle_radius ** 2 
+perimeter = 2 * pi * circle_radius
+
+print(f"{area:.2f}")
+print(f"{perimeter:.2f}")
+
+
+## 11. Write a program that asks the user for the price of a product and displays the price with a 10% discount.
+
+price = float(input("Could you please tell me the price of an egg: "))
+
+egg_discount = price * 0.9
+print(f"{egg_discount:.2}")
+
+
+## 12. Write a program that reads the temperature in degrees Celsius and displays the temperature in degrees Fahrenheit. The formula to convert from Celsius to Fahrenheit is: F = (9/5)*C + 32.
+
+celsius = float(input("what is today's temparature in celsius?: "))
+
+fahrenheit = (9/5) * celsius + 32
+
+print(f"{fahrenheit:.2f}")
+
+
+## 13. Write a program that asks the user to enter 3 integers and displays the arithmetic mean of those numbers. Round to 1 decimal place.
+
+number_one = int(input("enter a number: "))
+
+number_two = int(input("enter a number: "))
+
+number_three = int(input("enter a number: "))
+
+addition = number_one + number_two + number_three
+
+arithmetic = addition / 3
+
+print(f"{arithmetic:.1f}")
+
+
+
+## 14. Write a program that reads a person's weight and height and displays their body mass index (BMI). The formula for calculating BMI is: BMI = weight/height², rounded to 3 decimal places.
+
+height = float(input("What's your height?: "))
+
+weight = float(input("Tell us your weight: "))
+
+bmi = weight / height ** 2
+
+print(f"Your BMI is {bmi:.3f}")
+
